@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap');
 
+/* RESET CSS */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -49,7 +51,7 @@ table {
     border-spacing: 0;
 }
 
-/* FIM DO RESET CSS */
+/* TAGS HTML */
 
 h1 {
     font-size: 40px;
@@ -61,12 +63,22 @@ h1 {
     text-transform: uppercase;
 }
 
-h1, p {
+h1, h2, p, .module {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     line-height: normal;
     text-align: center;
 }
+
+h2 {
+    color: #33A8DB;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 6.08px;
+    text-transform: uppercase;
+}
+
+/* HEADER SECTION */
 
 .banner {
     width: 100%;
@@ -90,11 +102,12 @@ h1, p {
     color: #FFF;
     font-size: 20px;
     font-weight: 400;
+    width: 85%;
 }
 
 .banner-content button {
     display: flex;
-    width: 65%;
+    width: 50%;
     padding: 20px;
     justify-content: center;
     border: 2px solid #3BA1CD;
@@ -107,3 +120,53 @@ h1, p {
     letter-spacing: 3.36px;
 }
 
+/* COURSE CONTENT SECTION */
+
+#course-content {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    background-color: #000;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+#course-content p {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    width: 60%;
+}
+
+.modules-list {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.module {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 16px 50px;
+    border-radius: 57px;
+    border: 1px solid #33A8DB;
+    background: #252525;
+    box-shadow: -2px 6px 4px 0px rgba(0, 0, 0, 0.40) inset;
+}
+
+.module span {
+    color: #33A8DB;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* TRANSFORM WORLD SECTION */
+
+/* PROFESSIONAL CHALLENGES SECTION */
+
+/* FOOTER SECTION */
